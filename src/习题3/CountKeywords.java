@@ -5,8 +5,8 @@ import java.util.*;
 
 public class CountKeywords {
 	public static void main(String[] args) throws Exception {
-//		Scanner input = new Scanner(System.in);
-//		System.out.print("Enter a Java source file: ");
+		// Scanner input = new Scanner(System.in);
+		// System.out.print("Enter a Java source file: ");
 		String filename = args[0];
 
 		File file = new File(filename);
@@ -32,9 +32,9 @@ public class CountKeywords {
 
 		while (input.hasNext()) {
 			String word = input.next();
-			if (word.contains("//"))		//注释风格为"//"时跳过
+			if (word.contains("//")) // 注释风格为"//"时跳过
 				input.nextLine();
-			else if (word.contains("/*"))	//注释风格为"/**/"时跳过
+			else if (word.contains("/*")) // 注释风格为"/**/"时跳过
 				while (input.hasNext() && !input.next().contains("*/")) {
 
 				}

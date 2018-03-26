@@ -11,7 +11,7 @@ public class demon {
 			while ((input = in.readLine()) != null) {
 				String[] str = input.trim().split("[^a-zA-Z]");// 利用正则表达式分割，正则表达式除开字母以外的任何元素
 				Collections.addAll(treeSet, str);
-				treeSet.remove("");// 移除空元素
+//				treeSet.remove("");// 移除空元素
 			}
 		}
 		System.out.println(treeSet);
